@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xams"
+    android:orientation="vertical"
+    tools:context=".Listgame">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="back"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/myorderss"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="MyListGame"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20dp"
+                android:layout_marginLeft="110dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="20dp"
+                android:layout_marginLeft="140dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            >
+
+
+            <ListView
+                android:id="@+id/ID"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                />
+
+            <ListView
+                android:id="@+id/Name"
+                android:layout_width="280dp"
+                android:layout_toRightOf="@+id/ID"
+                android:layout_height="wrap_content"
+
+
+                />
+            <ListView
+                android:id="@+id/Price"
+                android:layout_toRightOf="@+id/Name"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/Edit"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Id"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="ID"
+            android:textColorHint="@color/white"
+            android:ems="2"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/nAme"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/Id"
+            android:hint="Name"
+            android:textSize="20dp"
+            android:layout_marginLeft="80dp"
+            android:textColorHint="@color/white"
+            android:ems="5"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/pRice"
+            android:layout_toRightOf="@+id/nAme"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:hint="Price"
+            android:textColorHint="@color/white"
+            android:ems="5"
+            android:textSize="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Edit"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/backPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Back"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/paypal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/paypal"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/paywith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay with"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/Imasterc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mastercard"
+            android:layout_below="@id/paywith"
+            />
+
+        <TextView
+            android:id="@+id/masterc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mastercard"
+            android:layout_below="@id/paywith"
+            android:layout_toRightOf="@id/Imasterc"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/masterc"
+            android:layout_below="@id/paywith"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="190dp"
+            android:text="B29"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/masterc"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/price"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="190dp"
+            android:text="THB"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/paynow"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="20dp"
+        android:text="Pay Now"/>
+
+
+
+</LinearLayout>

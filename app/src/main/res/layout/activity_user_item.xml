@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xams"
+    android:orientation="vertical"
+    tools:context=".MyOrders">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="back"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myorderss"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="UserItem"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gamep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fImgView"
+        android:layout_marginLeft="10dp"
+        android:text="GAME PURCHASED"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fImgView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/hunt"/>
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fImgView"
+            android:text="Hunt Showdown"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE ODERED"
+            android:textColor="@color/white"
+            android:layout_below="@id/nametxt"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"
+
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/8/2022 10:00AM"
+            android:textColor="@color/white"
+            android:layout_below="@id/date"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"
+
+
+            />
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:textColor="@color/white"
+            android:layout_below="@id/time"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"
+
+            />
+        <TextView
+            android:id="@+id/Npayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYPAL"
+            android:textColor="@color/white"
+            android:layout_below="@id/payment"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"
+
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS : 1 DAYS"
+            android:textColor="@color/white"
+            android:layout_below="@id/Npayment"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE : "
+            android:textColor="@color/white"
+            android:layout_below="@id/status"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"/>
+
+        <TextView
+            android:id="@+id/priceG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B50"
+            android:textColor="@color/white"
+            android:layout_below="@id/status"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/price"/>
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CODE : "
+            android:textColor="@color/white"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/fImgView"/>
+
+        <TextView
+            android:id="@+id/CodeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G7H8I9"
+            android:textColor="@color/white"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/code"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

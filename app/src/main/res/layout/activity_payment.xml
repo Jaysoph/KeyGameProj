@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/backP"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" Back"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           android:layout_margin="10dp"
+           />
+
+   </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/paypal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/paypal"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/borderblack">
+
+            <TextView
+                android:id="@+id/paywithcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Pay with a card "/>
+
+            <TextView
+                android:id="@+id/cardnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/paywithcard"
+                android:text="Card Number "/>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardnumber"
+                android:ems="20"
+                android:hint="Card Number "
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mastercard"
+                android:layout_below="@id/cardnumber"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="320dp"/>
+
+            <TextView
+                android:id="@+id/expiration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/number"
+                android:text="MM/YY "/>
+
+            <EditText
+                android:id="@+id/mmyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expiration"
+                android:ems="20"
+                android:hint="Expiration "
+                />
+
+            <TextView
+                android:id="@+id/CVV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/mmyy"
+                android:text="CVV "/>
+
+            <EditText
+                android:id="@+id/numCVV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CVV"
+                android:ems="20"
+                android:hint="CVV "
+
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="ADD"/>
+
+
+
+
+
+
+</LinearLayout>

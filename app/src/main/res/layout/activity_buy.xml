@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xams"
+    android:orientation="vertical"
+    tools:context=".FullImg">
+
+
+    <TextView
+        android:id="@+id/backHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Back"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" adsaasd"
+        android:layout_margin="20dp"
+        android:textSize="40dp"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/fImgView"
+            android:layout_width="200dp"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:id="@+id/Ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fImgView"
+            android:text="Platform"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/Stxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steam"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/fImgView"
+            android:layout_below="@+id/Ptxt"
+            />
+
+        <TextView
+            android:id="@+id/Dtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Ptxt"
+            android:layout_marginLeft="30dp"
+            android:text="Days"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/daytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Ptxt"
+            android:layout_below="@id/Dtxt"
+            android:layout_marginLeft="30dp"
+            android:text="    1"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/pricetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/fImgView"
+            android:layout_below="@id/Stxt"
+            android:layout_marginLeft="70dp"
+            android:text="B29"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/bn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:layout_marginTop="20dp"
+            android:text="BUY NOW"
+            android:layout_toRightOf="@+id/fImgView"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/pricetxt"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

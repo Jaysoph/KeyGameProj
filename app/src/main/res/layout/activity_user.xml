@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xams"
+    android:orientation="vertical"
+    tools:context=".User">
+
+    <TextView
+        android:id="@+id/textkey"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="KeyGame"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myorderss"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="All User"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserID"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ListView
+                android:id="@+id/UserID"
+                android:layout_width="110dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/Username"
+                android:layout_width="110dp"
+
+                android:layout_height="wrap_content">
+
+            </ListView>
+            <Button
+                android:id="@+id/seemore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See More"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="20dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+
+</LinearLayout>

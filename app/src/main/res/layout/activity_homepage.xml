@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xams"
+    android:stretchColumns="1"
+    tools:context=".Homepage">
+
+    <ScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/textkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:text="KeyGame"
+                    android:textColor="@color/white"
+                    android:textSize="45dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/profilebtn"
+                    android:layout_width="69dp"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="120dp"
+                    android:background="@drawable/border"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profile" />
+            </TableRow>
+
+                <SearchView
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:queryHint="Search"
+                    android:theme="@style/ThemeOverlay.SearchView"
+
+                     />
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/myprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="My Profile"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/myorders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/myprofile"
+                    android:text="My Orders"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="750dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp">
+
+
+                    <GridView
+
+                        android:id="@+id/gridView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:columnWidth="100dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="80dp"
+                        android:numColumns="100"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="horizontal"
+                        android:stretchMode="none"
+
+
+                        />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="BEST SELLER"
+                android:fontFamily="@font/akaya_telivigala"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pubg" />
+                <Button
+                    android:id="@+id/buy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image1"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/green"
+                    android:textStyle="bold"
+                    android:text="BUY"/>
+
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/naraka"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image1" />
+                <Button
+                    android:id="@+id/buy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image1"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/green"
+                    android:textStyle="bold"
+                    android:text="BUY"
+                    android:layout_toRightOf="@+id/buy1"/>
+
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hunt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/image2"
+                    />
+                <Button
+                    android:id="@+id/buy3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image1"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/green"
+                    android:textStyle="bold"
+                    android:text="BUY"
+                    android:layout_toRightOf="@+id/buy2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/val"/>
+
+                <Button
+                    android:id="@+id/buy4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image4"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/green"
+                    android:textStyle="bold"
+                    android:text="BUY"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</TableLayout>
